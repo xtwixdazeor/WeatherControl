@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20sp"
+    android:orientation="horizontal">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="0sp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.2">
+    <TextView
+        android:id="@+id/date"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/text" />
+
+    <TextView
+        android:id="@+id/time"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textColor="#4CAF50"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/text" />
+
+</androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/weather"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        android:layout_weight="2"
+        style="@style/text" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:textAlignment="textEnd"
+        android:textSize="26sp"
+        android:textColor="#FF9800"
+        android:layout_weight="1"
+        style="@style/text" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeatherControl</string>
+    <string name="warning">Приложение не работает без доступа к геолокации :(</string>
+    <string name="fail">Локация недоступна :(</string>
+</resources>
